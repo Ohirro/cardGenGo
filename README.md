@@ -1,0 +1,2 @@
+# cardGenGo
+fractal alg golang
