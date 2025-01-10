@@ -13,7 +13,7 @@ Here are some examples of generated fractal maps:
 
 ---
 
-### Example 2: Sea and Islands
+### Example 2: Sea and Terrain
 ![Example 2](examples/2.png)
 
 ---
