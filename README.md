@@ -8,18 +8,18 @@ This project generates beautiful fractal maps using the Diamond-Square algorithm
 
 Here are some examples of generated fractal maps:
 
-### Example 1: Mixed Terrain
-![Example 1](examples/1.png)
+### Example 1: Warm Pastel
+![Example 1](examples/warm_pastel.png)
 
 ---
 
-### Example 2: Sea and Terrain
-![Example 2](examples/2.png)
+### Example 2: CoolPastel
+![Example 2](examples/cool_pastel.png)
 
 ---
 
-### Example 3: Mountainous Terrain
-![Example 3](examples/3.png)
+### Example 3: Cool Pastel 2
+![Example 3](examples/cool_pastel1.png)
 
 ---
 
