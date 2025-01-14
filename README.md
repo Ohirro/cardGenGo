@@ -1,6 +1,6 @@
 # Fractal Generator Golang
 
-This project generates beautiful fractal maps using the Diamond-Square algorithm. The generated maps can represent different types of terrains, such as mountains, plains, and water bodies.
+This project generates fractal maps using the Diamond-Square algorithm. The generated maps can represent different types of terrains, such as mountains, plains, and water bodies.
 
 ---
 
