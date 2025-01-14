@@ -14,12 +14,12 @@ Here are some examples of generated fractal maps:
 ---
 
 ### Example 2: CoolPastel
-![Example 2](examples/cool_pastel.png)
+![Example 2](examples/cool_pastel1.png)
 
 ---
 
 ### Example 3: Cool Pastel 2
-![Example 3](examples/cool_pastel1.png)
+![Example 3](examples/cool_pastel2.png)
 
 ---
 

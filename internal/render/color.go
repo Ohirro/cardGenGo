@@ -84,7 +84,7 @@ var (
 	}
 )
 
-var CurrentPalette = CoolPastelPalette
+var CurrentPalette = WarmPastelPalette
 
 func getColorAndPerspectiveForHeight(height int) (color.RGBA, float64) {
 	switch {
