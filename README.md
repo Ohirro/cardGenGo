@@ -38,9 +38,13 @@ OUTPUT_FILE=fractal.png
 ```
 
 _FRACTAL_N: Size of the map (2^N + 1).
+
 FRACTAL_K: Roughness factor.
+
 RENDER_VIEW_ANGLE: Viewing angle for perspective rendering.
+
 RENDER_LIGHT_ANGLE: Light source angle for shadows.
+
 OUTPUT_FILE: Name of the output file._
 
 3. Build and run the application:
