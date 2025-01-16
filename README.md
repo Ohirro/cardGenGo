@@ -21,9 +21,32 @@ Here are some examples of generated fractal maps:
 ### Example 3: Cool Pastel 2
 ![Example 3](examples/cool_pastel2.png)
 
+## Steps
+---
+### Running
+![Example 1](examples/app_1.png)
+
 ---
 
+### Extend Left
+![Example 2](examples/app_2.png)
+
+---
+
+### Extend right
+![Example 3](examples/app_3.png)
+
+---
+
+### Regenerate
+![Example 3](examples/app_4.png)
+
+
 ## How to Use
+0. **For Linux**:
+    ```bash
+    sudo apt update && sudo apt install -y libgl1-mesa-dev xorg-dev
+    ```
 
 1. Clone the repository:
    ```bash

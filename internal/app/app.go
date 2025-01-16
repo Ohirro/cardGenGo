@@ -2,10 +2,8 @@ package app
 
 import (
 	"cart_gen/internal/config"
-	"cart_gen/internal/fractal"
-	"cart_gen/internal/render"
-	"log"
-	"os"
+	"cart_gen/internal/model"
+	"cart_gen/internal/ui"
 )
 
 func Run() error {
@@ -13,28 +11,11 @@ func Run() error {
 	if err != nil {
 		return err
 	}
-	log.Printf("Configuration loaded: %+v\n", cfg)
 
-	fractalGen := fractal.NewFractalGenerator("diamond_square")
+	fractalModel := model.NewFractalModel("diamond_square", cfg.Fractal.N, cfg.Fractal.K)
+	fractalModel.Generate()
 
-	log.Println("Generating fractal...")
-	grid, gridSize := fractalGen.Generate(cfg.Fractal.N, cfg.Fractal.K)
+	ui.ShowWindow(fractalModel)
 
-	log.Println("Rendering image...")
-	img := render.Render(grid, gridSize, cfg.Render.ViewAngle, cfg.Render.LightAngle)
-
-	outputFile := cfg.OutputFile
-	log.Printf("Saving image to %s\n", outputFile)
-	file, err := os.Create(outputFile)
-	if err != nil {
-		return err
-	}
-	defer file.Close()
-
-	if err = render.SaveImage(img, file); err != nil {
-		return err
-	}
-
-	log.Printf("Fractal successfully saved to %s\n", outputFile)
 	return nil
 }

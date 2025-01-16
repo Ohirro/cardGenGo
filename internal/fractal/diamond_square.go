@@ -43,12 +43,12 @@ func applyDiamondSquare(grid [][]float64, gridSize, n int, k float64) {
 
 		for y := 0; y < gridSize; y += size {
 			for x := half; x < gridSize; x += size {
-				calcSquare(grid, y, x, half, k)
+				calcSquareWithBoundary(grid, y, x, half, k)
 			}
 		}
 		for y := half; y < gridSize; y += size {
 			for x := 0; x < gridSize; x += size {
-				calcSquare(grid, y, x, half, k)
+				calcSquareWithBoundary(grid, y, x, half, k)
 			}
 		}
 
@@ -58,6 +58,11 @@ func applyDiamondSquare(grid [][]float64, gridSize, n int, k float64) {
 
 func calcDiamond(grid [][]float64, row, col, size int, k float64) {
 	capacity := len(grid)
+
+	if grid[row][col] != 0 {
+		return
+	}
+
 	if row-size < 0 || row+size >= capacity || col-size < 0 || col+size >= capacity {
 		return
 	}
