@@ -1,0 +1,11 @@
+
+
+
+build:
+	@echo "Building the Go project..."
+	go mod tidy
+	go build  ./cmd/main.go
+
+build-linux:
+	@echo "Building the Go project for Linux..."
+	GOOS=linux GOARCH=amd64 go build  ./cmd/main.go
